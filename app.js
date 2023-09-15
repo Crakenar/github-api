@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/githubReadme/:repoName", async (req, res) => {
+app.get("/githubREADME/:repoName", async (req, res) => {
   const GITHUB_API_KEY = process.env.GITHUB_API_KEY;
   const octokit = new Octokit({
     auth: GITHUB_API_KEY,
